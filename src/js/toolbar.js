@@ -15,13 +15,13 @@ function onReplacementTheme(oldTheme, newTheme) {
   localStorage.setItem('Theme', newTheme);
 }
 
-function changeTheme(event) {
+function onChangeTheme(event) {
   if (event.target.checked) {
-    onExchangeTheme(Theme.LIGHT, Theme.DARK);
+    onReplacementTheme(Theme.LIGHT, Theme.DARK);
   }
 
   if (!event.target.checked) {
-    onExchangeTheme(Theme.DARK, Theme.LIGHT);
+    onReplacementTheme(Theme.DARK, Theme.LIGHT);
   }
 }
 const valueTheme = localStorage.getItem('Theme');
