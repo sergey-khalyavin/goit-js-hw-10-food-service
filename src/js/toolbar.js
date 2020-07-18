@@ -25,7 +25,7 @@ function onChangeTheme(event) {
   }
 }
 const valueTheme = localStorage.getItem('Theme');
-const parseValueTheme = valueTheme;
+parseValueTheme = valueTheme;
 
 if (parseValueTheme === Theme.DARK) {
   bodyRef.classList.remove(Theme.LIGHT);
